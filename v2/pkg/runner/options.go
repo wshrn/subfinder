@@ -24,8 +24,8 @@ import (
 )
 
 var (
-	defaultConfigLocation         = filepath.Join(userHomeDir(), ".config/subfinder/config.yaml")
-	defaultProviderConfigLocation = filepath.Join(userHomeDir(), ".config/subfinder/provider-config.yaml")
+	defaultConfigLocation         = "config.yaml"
+	defaultProviderConfigLocation = "configs.yaml"
 )
 
 // Options contains the configuration options for tuning
