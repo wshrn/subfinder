@@ -15,11 +15,10 @@ import (
 func GetConfigDirectory() (string, error) {
 	var config string
 
-	directory, err := os.UserHomeDir()
 	if err != nil {
 		return config, err
 	}
-	config = directory + "/.config/subfinder"
+	config = "./"
 
 	// Create All directory for subfinder even if they exist
 	err = os.MkdirAll(config, os.ModePerm)
